@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Rock Paper Scissors</h1>
+
+    <div class="choices">
+      <div class="choice" id="rock">
+        <img src="./image/rock.png" alt="Rock" />
+      </div>
+      <div class="choice" id="paper">
+        <img src="./image/paper.png" alt="Paper" />
+      </div>
+      <div class="choice" id="scissors">
+        <img src="./image/scissors.png" alt="Scissors" />
+      </div>
+    </div>
+
+    <div class="score-board">
+      <div class="score">
+        <p id="user-score">0</p>
+        <p>You</p>
+      </div>
+      <div class="score">
+        <p id="comp-score">0</p>
+        <p>Comp</p>
+      </div>
+    </div>
+
+    <div class="msg-container">
+      <p id="msg">Play your game</p>
+    </div>
+
+    <div class="extra-controls">
+      <button id="reset-btn">Reset Game</button>
+      <button id="theme-toggle">Toggle Theme</button>
+    </div>
+
+    <audio id="win-sound" src="./sound/mixkit-achievement-bell-600.wav"></audio>
+    <audio id="lose-sound" src="./sound/8-bit-video-game-fail-version-2-145478.mp3"></audio>
+    <audio id="draw-sound" src="./sound/fantasy-game-sword-cut-sound-effect-support-me-on-patreon-339824.mp3"></audio>
+
+    <script src="script.js"></script>
+  </body>
+</html>
